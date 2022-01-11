@@ -1,0 +1,35 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap'); */
+
+
+.app{
+    min-height: 100vh;
+    background-color: #ffccff;
+    color: black;
+    padding-top: 108px;
+    padding-bottom: 80px;
+}
+
+@media (max-width:700px){
+    .app{
+        padding-top: 80px;
+    }
+}
+
+.page-title{
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #9900cc;
+    text-shadow: 1px 1px 2px #c963c9;
+    padding-bottom: 5px;
+}
+
+@media (max-width:1000px) {
+    .page-title{
+        font-size: 4.5vw;
+    }
+    
+}

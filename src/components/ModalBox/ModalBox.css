@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.style{
+    position: absolute;
+    top: 50%;
+    /* bottom: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    background-color: paper !important;
+    border: 2px solid #000;
+    box-shadow: 24 !important;
+    padding: 4;
+    border: 2px solid #330033;
+    border-radius: 10px;
+    color: #c980c9;
+    /* overflow-y: scroll; */
+    /* scrollbar-width: none; */
+}
+
+/* .style::-webkit-scrollbar {
+ width:0;
+ background: transparent;
+  } */
+
+.ModalBox {
+    background-color: #330033;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+/* .main{
+   width: 90%;
+   height: 0%;
+   background-color: #39445a;
+   border: 2px solid #282c34;
+   border-radius: 10;
+   color: white;
+} */
+
+.modal_landscape_image {
+  object-fit: contain;
+  border-radius: 10px;
+  /* height: 20%; */
+}
+
+.modal_potrait_image {
+  display: none;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.modal_tagline {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.button{
+    color: white !important;
+    font-weight: bold !important;
+}
+
+
+.about {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.modal_title {
+  height: 12%;
+  font-size: 5vw;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_description {
+  display: flex;
+  height: 40%;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 20px;
+  scrollbar-width: thin; /* Firefox */
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+}
+
+.modal_description::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .modal_landscape_image {
+    display: none;
+  }
+  .modal_potrait_image {
+    display: flex;
+    width: 38%;
+  }
+
+  .style{
+      overflow-y: hidden;
+      scrollbar-width: none;
+  }
+
+  .style::-webkit-scrollbar{
+      display: none;
+  }
+
+  .ModalBox {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    /* width: 85%; */
+    /* height: 100%; */
+  }
+  .about {
+    width: 58%;
+    padding: 0;
+    /* height: 100%; */
+  }
+  .modal_title {
+    font-size: 2.5vw;
+  }
+  .modal_description {
+    font-size: 22px;
+    /* height: 25%; */
+  }
+
+  .modal_tagline{
+      font-size:2vw;
+  }
+}
